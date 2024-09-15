@@ -1,20 +1,30 @@
-// C++ Basics Programming Projec
-//
+// C++ Basics Programming Project: Energy Drink Consumption
+// This project will take results from a survey and use percentages to approximate different catagories of the survey's results
 
 #include <iostream>
+using namespace std;
+
 
 int main()
+
 {
-    std::cout << "Hello World!\n";
+	//Input Variables
+  
+		double Customers = 16500;
+		
+	//These need to be changed into percentages by dividing them by 100	
+		double EnergyPercent = 15;
+		double CitrusPercent = 58;
+	
+	//Calculations
+
+		int EnergyDrinkers = Customers * (EnergyPercent / 100);
+		int CitrusEnjoyers = EnergyDrinkers * (CitrusPercent / 100);
+
+	//Outputting the Calculations
+
+		cout << "The approximate amount of customers drinking one or more energy drinks per week are " << EnergyDrinkers << endl;
+		cout << "The approximate amount of customers who enjoy citrus flavored energy drinks are " << CitrusEnjoyers << endl;
+
+		return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
