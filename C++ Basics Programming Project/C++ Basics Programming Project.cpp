@@ -1,20 +1,23 @@
-// C++ Basics Programming Projec
-//
+// C++ Basics Programming Project : Project 1
+// Distance Per Gas Per Tank
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Input Variables
+	double tank = 30;
+	double citympg = 23.5;
+	double highwaympg = 28.9;
+
+	//Calculations to create output variabless
+	double citymiles = tank * citympg;
+	double highwaymiles = tank * highwaympg;
+
+	//Display of the output variables
+	cout << "When driving in the city you can drive " << citymiles << " miles far" << endl;
+	cout << "When drivinng in the highway you can drive " << highwaymiles << " miles far" << endl;
+
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
